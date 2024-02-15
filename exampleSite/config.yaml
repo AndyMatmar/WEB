@@ -127,7 +127,7 @@ params:
     title: "Andy."
     subtitle: "I create solutions for media localization services"
     content: "Media localization specialist and team lead. I’m continuously developing new localization solutions to make content accessible, immersive, and enjoyed worldwide."
-    image: /images/hero.svg
+    image: /images/hero 2.jpg
     bottomImage:
       enable: true
     # roundImage: true # Make hero image circular | default false
