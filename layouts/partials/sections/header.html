@@ -52,13 +52,28 @@
             <!-- navbar brand -->
             <a class="navbar-brand primary-font text-wrap" href="{{ .Site.BaseURL | relURL }}">
                 {{ if and (or (.Site.Params.favicon) (.Site.Params.navbar.brandLogo)) .Site.Params.navbar.showBrandLogo | default true }}
-                <img src="{{ .Site.Params.navbar.brandLogo | default .Site.Params.favicon }}" width="30" height="30"
+                <img class="brand-logo" src="{{ .Site.Params.navbar.brandLogo | default .Site.Params.favicon }}" width="30" height="30"
                     class="d-inline-block align-top">
                 {{ .Site.Params.navbar.brandName | default .Site.Params.title }}
                 {{ else }}
                 {{ .Site.Params.navbar.brandName | default .Site.Params.title }}
                 {{ end }}
             </a>
+        </div>
+    </nav>
+</header>
+
+<script>
+    function updateBrandLogo(theme) {
+        const brandLogo = document.querySelector('.brand-logo');
+        const brandLogoPath = theme === 'dark' ? '/fav 4.png' : '/fav 6.png';
+        brandLogo.src = brandLogoPath;
+    }
+
+    // Assuming you have a way to detect the theme and store it in a variable called currentTheme
+    updateBrandLogo(currentTheme);
+</script>
+
 
             {{ if not (.Site.Params.navbar.disableSearch | default false) }}
                 <div>
