@@ -53,7 +53,7 @@
             <a class="navbar-brand primary-font text-wrap" href="{{ .Site.BaseURL | relURL }}">
                 {{ if and (or (.Site.Params.favicon) (.Site.Params.navbar.brandLogo)) .Site.Params.navbar.showBrandLogo | default true }}
                 <img src="{{ .Site.Params.navbar.brandLogo | default .Site.Params.favicon }}" width="30" height="30"
-                    class="d-inline-block align-top">
+                    class="d-inline-block align-top brand-logo" id="brandLogo">
                 {{ .Site.Params.navbar.brandName | default .Site.Params.title }}
                 {{ else }}
                 {{ .Site.Params.navbar.brandName | default .Site.Params.title }}
@@ -198,3 +198,36 @@
         </div>
     </nav>
 </header>
+<script>
+    // Function to toggle between light and dark logo
+    function toggleBrandLogo(theme) {
+        const brandLogo = document.getElementById('brandLogo');
+        if (theme === 'dark') {
+            brandLogo.src = 'path/to/dark/logo.png'; // Path to your dark mode logo
+        } else {
+            brandLogo.src = 'path/to/light/logo.png'; // Path to your light mode logo
+        }
+    }
+
+    let localStorageValue = localStorage.getItem("pref-theme");
+    let mediaQuery = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+    switch (localStorageValue) {
+        case "dark":
+            document.body.classList.add('dark');
+            toggleBrandLogo('dark');
+            break;
+        case "light":
+            document.body.classList.remove('dark');
+            toggleBrandLogo('light');
+            break;
+        default:
+            if (mediaQuery) {
+                document.body.classList.add('dark');
+                toggleBrandLogo('dark');
+            } else {
+                toggleBrandLogo('light');
+            }
+            break;
+    }
+</script>
