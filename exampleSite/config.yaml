@@ -56,7 +56,7 @@ params:
   title: "AndyMathews"
   description: Text about my cool site
   # staticPath: ""  # The path to serve the static files from
-  favicon: "/fav 5.png"
+  favicon: "/fav 4.png"
 
   # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
   # serving both, only the css, or only the js files through the CDN. Any other value will make so that CDN is not used.
@@ -126,7 +126,7 @@ params:
     intro: "Hi, my name is"
     title: "Andy."
     subtitle: "I create solutions for media localization services"
-    content: "A localization specialist and team lead. I'm continuously developing new localization solutions to help clients craft immersive media experiences worldwide."
+    content: "Media localization specialist and team lead. I’m continuously developing new localization solutions to make content accessible, immersive, and enjoyed worldwide."
     image: /images/hero.svg
     bottomImage:
       enable: true
