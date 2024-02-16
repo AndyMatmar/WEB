@@ -1,3 +1,11 @@
+function setLogoBasedOnTheme() {
+    var logo = document.getElementById('brandLogo'); // Make sure 'brandLogo' matches the ID of your logo image element
+    if (document.body.classList.contains("dark")) {
+        logo.src = '/brandlogo-dark.png'; // Update this path to where your dark theme logo is stored
+    } else {
+        logo.src = '/brandlogo-light.png'; // Update this path to where your light theme logo is stored
+    }
+}
 {{- if (eq .Site.Params.theme.defaultTheme "light") }}
 <script>
     if (document.body.className.includes("dark")) {
