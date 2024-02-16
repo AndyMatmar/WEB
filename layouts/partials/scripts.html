@@ -35,9 +35,11 @@
         if (document.body.className.includes("dark")) {
             document.body.classList.remove('dark');
             localStorage.setItem("pref-theme", 'light');
+            logo.src = 'exampleSite/static/brandlogo-light.png'; // Set the logo for light theme
         } else {
             document.body.classList.add('dark');
             localStorage.setItem("pref-theme", 'dark');
+            logo.src = 'exampleSite/static/brandlogo-dark.png'; // Set the logo for dark theme
         }
     })
 
