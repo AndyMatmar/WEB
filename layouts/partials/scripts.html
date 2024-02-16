@@ -6,6 +6,10 @@ function setLogoBasedOnTheme() {
         logo.src = '/brandlogo-light.png'; // Update this path to where your light theme logo is stored
     }
 }
+document.addEventListener('DOMContentLoaded', function() {
+    setLogoBasedOnTheme(); // This line calls the function you defined earlier
+});
+
 {{- if (eq .Site.Params.theme.defaultTheme "light") }}
 <script>
     if (document.body.className.includes("dark")) {
@@ -40,17 +44,18 @@ function setLogoBasedOnTheme() {
 {{- if (not .Site.Params.theme.disableThemeToggle) }}
 <script>
     document.getElementById("theme-toggle").addEventListener("click", () => {
-    var logo = document.getElementById('brandLogo'); // Define the logo variable
-    if (document.body.className.includes("dark")) {
-        document.body.classList.remove('dark');
-        localStorage.setItem("pref-theme", 'light');
-        logo.src = '/brandlogo-light.png'; // Corrected path for light theme logo
-    } else {
-        document.body.classList.add('dark');
-        localStorage.setItem("pref-theme", 'dark');
-        logo.src = '/brandlogo-dark.png'; // Corrected path for dark theme logo
-    }
-});
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+        setLogoBasedOnTheme(); // Call this function to update the logo based on the new theme
+    });
+</script>
+{{- end }}
+
 
     var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
     var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
