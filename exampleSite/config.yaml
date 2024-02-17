@@ -127,14 +127,14 @@ params:
     title: "Andy."
     subtitle: "I help bring content to global audiences"
     content: "Media localization specialist and team lead. I’m continuously developing new localization solutions to make content accessible, immersive, and enjoyed worldwide."
-    image: /images/hero 2.jpg
+    image: /images/hero 3.jpg
     bottomImage:
       enable: true
     # roundImage: true # Make hero image circular | default false
     button:
       enable: true
       name: "CV"
-      url: "https://drive.google.com/file/d/1nBv_qaeDZs5XpXsXmOnhuv8Y7wyikjcm/view?usp=sharing"
+      url: "#"
       download: true
       newPage: false
     socialLinks:
@@ -148,7 +148,7 @@ params:
   about:
     enable: true
     title: "About Me"
-    image: "/images/hero 3.jpg"
+    image: "/images/hero 2.jpg"
     content: |-
       I am a localization specialist with a focus on vendor and project management for Netflix-commissioned subtitles. I have a background in translation, teaching, and copywriting, and I have a profound interest in workflow streamlining and optimization. I am currently working as DTT Partner Lead at Transperfect Media.
     
