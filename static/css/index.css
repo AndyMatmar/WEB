@@ -108,13 +108,13 @@ header .navbar.animate {
     opacity: 0.8;
 }
 
-@media (max-width: 2000px) {
+@media (max-width: 2500px) {
 #hero .image img {
     box-shadow:0px 8px 56px rgba(15, 80, 100, 0.16);
     padding: 0;
     border: 3px solid var(--secondary-color);
     border-radius: 1rem;
-    width: 150%; /* Make the image fill the container */
+    width: 200%; /* Make the image fill the container */
     height: auto; /* Maintain aspect ratio */
   }
 }
