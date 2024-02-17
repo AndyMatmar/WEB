@@ -139,13 +139,10 @@ params:
       newPage: false
     socialLinks:
       fontAwesomeIcons:
-        - icon: fab fa-github
-          url: https://example.com
-        - icon: fab fa-x-twitter
-          url: https://example.com
-      customIcons:
-        - icon: /fav.png
-          url: "https://example.com"
+        - icon: fab fa-youtube
+          url: https://youtu.be/wo4P_YL4z9M
+        - icon: fab fa-linkedin
+          url: https://www.linkedin.com/in/andymathewsmartin/
 
   # About
   about:
