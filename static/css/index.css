@@ -114,7 +114,7 @@ header .navbar.animate {
     padding: 0;
     border: 3px solid var(--secondary-color);
     border-radius: 1rem;
-    width: 100%; /* Make the image fill the container */
+    width: 150%; /* Make the image fill the container */
     height: auto; /* Maintain aspect ratio */
   }
 }
