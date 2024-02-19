@@ -114,13 +114,13 @@ header .navbar.animate {
     padding: 0;
     border: 3px solid var(--secondary-color);
     border-radius: 1rem;
-    width: 140%; /* Make the image fill the container */
+    width: 120%; /* Make the image fill the container */
     height: auto; /* Maintain aspect ratio */
   }
 }
 #hero .image.animate img {
     width: auto; /* Adjust the width as needed, could be in % or px */
-    max-width: 140%; /* Ensuring it doesn't overflow its container */
+    max-width: 120%; /* Ensuring it doesn't overflow its container */
     height: auto; /* To maintain aspect ratio */
 }
 
