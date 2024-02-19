@@ -120,7 +120,7 @@ header .navbar.animate {
 }
 #hero .image.animate img {
     width: auto; /* Adjust the width as needed, could be in % or px */
-    max-width: 120%; /* Ensuring it doesn't overflow its container */
+    max-width: 140%; /* Ensuring it doesn't overflow its container */
     height: auto; /* To maintain aspect ratio */
 }
 
