@@ -150,17 +150,17 @@ params:
     title: "About Me"
     image: "/images/hero 2.jpg"
     content: |-
-      I am a localization specialist with a focus on vendor and project management for Netflix-commissioned subtitles. I have a background in translation, teaching, and copywriting, and I have a profound interest in workflow streamlining and optimization. I am currently working as DTT Partner Lead at Transperfect Media.
+      I am a localization specialist with a focus on vendor and project management for Netflix-commissioned subtitles. I have a background in translation, teaching, and copywriting, and I have a profound interest in workflow streamlining and optimization. I am currently working as DTT Partner Lead at TransPerfect Media.
     
     skills:
       enable: true
       title: "Here are a few of my skills:"
       items:
-        - "Linguistics (Copywriting, Editing, Translating)"
+        - "Linguistics (Translating, copywriting, editing)"
         - "Subtitling (EZT, OOONA, Originator)"
         - "Timed Text Specifications (Netflix, Amazon, RedBull)"
-        - "Productivity Software (Office, Google Suite)"
-        - "Video Editing (Premiere, Screencast)"
+        - "Productivity (Office, Google Suite)"
+        - "Video Editing (Premiere, ScreenPal)"
         - "Data Analytics (Tableau, PowerBI)"
 
   # Experience
@@ -169,27 +169,37 @@ params:
     # title: "Custom Name"
     items:
       - job: "Vendor Lead Netflix DTT Partner Program"
-        company: "Sublime Subtitling/Transperfect Media"
+        company: "Sublime Subtitling / TransPerfect Media"
         companyUrl: "https://www.transperfect.com/media"
         date: "Jan 2019 - present"
         featuredLink:
           enable: true
           name: "View Netflix DTT Program"
           url: "http://gvm.netflixstudios.com/"
-        content: "I am currently working as a team lead at [Sublime Subtitling/Transperfect Media](https://www.transperfect.com/media) in Madrid, Spain. I am currently leading a team in charge of training and managing a pool of 200 + linguists who fulfill Netflix-commissioned timed text projects."
+        content: |
+          I am currently working as a team lead at [Sublime Subtitling / TransPerfect Media](https://www.transperfect.com/media) in Madrid, Spain. I am currently leading a team in charge of training and managing a pool of 200 + linguists who fulfill Netflix-commissioned timed text projects.
 
-      - job: "Software Developer"
-        company: "Amazon"
-        companyUrl: "https://example.com"
-        date: "Sep 2020 - Dec 2021"
+          * Team lead
+              * Drove strategy and client engagement for Netflix-commissioned subtitling projects, ensuring client satisfaction and enhancing project volume by [X]% YoY.
+          * Recruitment
+              * Developed scalable eLearning courses, cutting onboarding time in half and growing our linguist pool by 900%, expanding language coverage to 20+ languages.
+          * Operations
+              * Innovated 6 project management and quality assurance protocols, enhancing team productivity and readiness for scaling up as needed.
+          * KPI analysis
+              * Lead strategy to consistently meet Netflix's KPI targets in on-time delivery and two key types of quarterly quality control assessments.
+
+      - job: "Localization Project Manager"
+        company: "Sublime Subtitling"
+        companyUrl: "https://www.sublimesubtitling.com/"
+        date: "May 2018 - Dec 2018"
         featuredLink:
-          enable: true
+          enable: false
           url: "https://example.com"
         info:
           enable: true
-          content: I worked as a software developer for more than one year in Amazon.
+          content: I worked as a Project Manager for eight months at Sublime Subtitling.
         content: |
-          I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city.
+          
 
           - Lead backend developer for a product.
           - Created a frontend design for a product.
