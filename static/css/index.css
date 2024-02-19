@@ -119,8 +119,9 @@ header .navbar.animate {
   }
 }
 #hero .image.animate img {
-    animation: fade-in 1s ease-out;
-    transition: box-shadow 0.3s;
+    width: auto; /* Adjust the width as needed, could be in % or px */
+    max-width: 120%; /* Ensuring it doesn't overflow its container */
+    height: auto; /* To maintain aspect ratio */
 }
 
 #hero .image img:hover {
