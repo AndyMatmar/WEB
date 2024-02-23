@@ -169,7 +169,7 @@ params:
     # title: "Custom Name"
     items:
       - job: "Vendor Lead Netflix DTT Partner Program"
-        company: "Sublime Subtitling / TransPerfect Media"
+        company: "Sublime Subtitling/TransPerfect Media"
         companyUrl: "https://www.transperfect.com/media"
         date: "Jan 2019 - present"
         featuredLink:
